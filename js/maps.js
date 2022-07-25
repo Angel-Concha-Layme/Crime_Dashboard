@@ -35,7 +35,7 @@ function main() {
 			};
 
 			$.ajax({
-				url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+				url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 				method: "GET",
 				dataType: "json",
 			    data: formData,
@@ -242,7 +242,7 @@ $('.form-control').change(function() {
 		};
 
 	$.ajax({
-		url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+		url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 		method: "GET",
 		dataType: "json",
         data: formHeatmap,
@@ -283,30 +283,3 @@ function heatLayer(data) {
 	layerControl.addOverlay(heat, "Heatmap")
 };
 
-
-	// ---------- PLOT CLUSTER MAP ---------------
-// var clusters;
-// function clusterLayer(data){ //Inherited from AJAX in heatmapLayer
-// 	if(clusters){
-// 		map.removeLayer(clusters);
-// 		layerControl.removeLayer(clusters);
-// 	}
-// 	clusters = new L.markerClusterGroup();
-// 	var geoJsonLayer = new L.geoJson(data,{
-// 			pointToLayer: function(feature, latlng){
-// 				var marker = L.marker(latlng);
-// 				marker.bindPopup(
-// 					"<b>Crime Type: </b>"+feature.properties.primary_type +
-// 					"</br>" +
-// 					"<b>Description: </b>"+feature.properties.description  +
-// 					"</br>" +
-// 					"<b>Block: </b>"+feature.properties.block  +
-// 					"</br>" +
-// 					"<b>Date: </b>"+feature.properties.date);
-// 				return marker;
-// 			},
-//         });
-
-//     map.addLayer(geoJsonLayer);
-//     layerControl.addOverlay(clusters, "Clusters")
-// };
