@@ -71,7 +71,7 @@ $(document).ready(
 		numberOfMonths: 1,
 		dateFormat: 'yy-mm-dd',
 		changeYear: true,
-		defaultDate: new Date(),
+		defaultDate: new Date(2021, 01, 01),
 		onClose: function( selectedDate ) {
     		$( "#startDate" ).datepicker( "option", "maxDate", selectedDate );
 	  	},
