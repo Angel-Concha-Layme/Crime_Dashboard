@@ -5,7 +5,7 @@ function loadDropdowns() {
 
 	var offSelect = $("#crimeType1, #crimeType2");
 	$.ajax({
-		url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson?$select=distinct primary_type&$order=primary_type ASC'
+		url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson?$select=distinct primary_type&$order=primary_type ASC'
 	})
 	.done(function(data) {
 		$.each(data.features, function (i, feature) {
@@ -16,7 +16,7 @@ function loadDropdowns() {
 
 	var arrSelect = $("#arrest")
 	$.ajax({
-		url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson?$select=distinct arrest&$order=arrest DESC'
+		url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson?$select=distinct arrest&$order=arrest DESC'
 	})
 	.done(function(data) {
 		$.each(data.features, function (i, feature) {
@@ -27,7 +27,7 @@ function loadDropdowns() {
 
 	var domSelect = $("#domestic")
 	$.ajax({
-		url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson?$select=distinct domestic&$order=domestic DESC'
+		url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson?$select=distinct domestic&$order=domestic DESC'
 	})
 	.done(function(data) {
 		$.each(data.features, function (i, feature) {
@@ -93,7 +93,7 @@ function main() {
 				};
 
 			$.ajax({
-				url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+				url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 				method: "GET",
 				dataType: "json",
 		        data: formParam1,
@@ -360,14 +360,14 @@ function main() {
 
 
 			$.ajax({
-				url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+				url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 				method: "GET",
 				dataType: "json",
 			    data: formDataLineGraph1,
 			}).done(function (data1) {
 				var data1 = data1.features;
 				$.ajax({
-					url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+					url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 					method: "GET",
 					dataType: "json",
 				    data: formDataLineGraph2,
@@ -519,14 +519,14 @@ function main() {
 
 
 			$.ajax({
-				url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+				url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 				method: "GET",
 				dataType: "json",
 			    data: formDataBarGraph1,
 			}).done(function (data1) {
 				var data1 = data1.features;
 				$.ajax({
-					url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+					url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 					method: "GET",
 					dataType: "json",
 				    data: formDataBarGraph2,

@@ -94,7 +94,7 @@ $('.form-control').change(function() {
 		};
 
 	$.ajax({
-		url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+		url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 		method: "GET",
 		dataType: "json",
         data: formDataLineGraph,
@@ -218,7 +218,7 @@ function graph2(data) {
 		};
 
 	$.ajax({
-		url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+		url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 		method: "GET",
 		dataType: "json",
         data: formDataBarGraph,

@@ -32,7 +32,7 @@ var app_token = "GhcK7Cj79Lg5uRtd5hPdldrnY";
 			};
 
 		$.ajax({
-			url: 'https://data.cityofchicago.org/resource/3i3m-jwuy.geojson',
+			url: 'https://data.cityofchicago.org/resource/ijzp-q8t2.geojson',
 			method: "GET",
 			dataType: "json",
 	        data: formTable,
