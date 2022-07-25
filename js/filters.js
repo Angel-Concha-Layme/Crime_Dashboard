@@ -59,7 +59,7 @@ $(document).ready(
     	numberOfMonths: 1,
     	dateFormat: 'yy-mm-dd',
     	changeYear: true,
-    	defaultDate: new Date(2010, 01, 01),
+    	defaultDate: new Date(2002, 01, 01),
     	onClose: function( selectedDate ) {
     		$( "#endDate" ).datepicker( "option", "minDate", selectedDate );
 		}
